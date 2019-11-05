@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="从csdn上copy的，原文https://blog.csdn.net/qq_41094339/article/details/80159838  一、基本概念  1、发送器：向总线发送数据的器件。       接收器：从总线接收数据的器件。       主机   ：初始化发送，产生时钟周期，结束发送的器件       从机   ：被主机寻址的器件  2、释放总线：将总线SDA线拉高 二、以从MP">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-05T17:20:42.327Z">
+<meta property="og:updated_time" content="2019-11-05T17:28:29.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IIC通讯协议">
 <meta name="twitter:description" content="从csdn上copy的，原文https://blog.csdn.net/qq_41094339/article/details/80159838  一、基本概念  1、发送器：向总线发送数据的器件。       接收器：从总线接收数据的器件。       主机   ：初始化发送，产生时钟周期，结束发送的器件       从机   ：被主机寻址的器件  2、释放总线：将总线SDA线拉高 二、以从MP">
@@ -374,7 +374,10 @@
 
      （2）在主机向从机发送数据时，每发送/接收一个数据，接收器发送一个ACK表示成功接收
 
-              在从机向主机发送数据时，每发送/接收一个数据，由主机决定是否还要继续发送，如果要则ACK（应答），如果不要则NACK（不应答）.</code></pre>
+              在从机向主机发送数据时，每发送/接收一个数据，由主机决定是否还要继续发送，如果要则ACK（应答），如果不要则NACK（不应答）.</code></pre><blockquote>
+<p>补充：寄存器地址在mpu-6050官方文档里找到</p>
+</blockquote>
+
       
     </div>
     
