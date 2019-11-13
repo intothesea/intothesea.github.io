@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期">
+<meta name="description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期    还可以检测鼠标操作，例如悬浮">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 1">
 <meta property="og:url" content="http://yoursite.com/2019/11/13/JavaScript-1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期">
+<meta property="og:description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期    还可以检测鼠标操作，例如悬浮">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-13T13:10:56.427Z">
+<meta property="og:updated_time" content="2019-11-13T13:29:31.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 1">
-<meta name="twitter:description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期">
+<meta name="twitter:description" content="JavaScript DOM操作 在我的理解中，这似乎是动态改变页面文件的一种方式     菜鸟教程(runoob.com)  function displayDate(){     document.getElementById(&quot;demo&quot;).innerHTML=Date(); }     我的第一个 JavaScript 程序 这是一个段落  显示日期    还可以检测鼠标操作，例如悬浮">
 
 
 
@@ -329,6 +329,23 @@ function displayDate(){
 <p id="demo">这是一个段落</p>
 
 <p><button type="button" onclick="displayDate()">显示日期</button></p>
+</body>
+
+<blockquote>
+<p>还可以检测鼠标操作，例如悬浮</p>
+</blockquote>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#ffffff;width:120px;height:20px;padding:40px;color:#000000">Mouse Over Me</div>
+<script>
+function mOver(obj){
+    obj.innerHTML="Thank You"
+}
+function mOut(obj){
+    obj.innerHTML="Mouse Over Me"
+}
+</script>
+
 </body>
 </html>
       

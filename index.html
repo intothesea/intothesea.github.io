@@ -330,6 +330,23 @@ function displayDate(){
 
 <p><button type="button" onclick="displayDate()">显示日期</button></p>
 </body>
+
+<blockquote>
+<p>还可以检测鼠标操作，例如悬浮</p>
+</blockquote>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#ffffff;width:120px;height:20px;padding:40px;color:#000000">Mouse Over Me</div>
+<script>
+function mOver(obj){
+    obj.innerHTML="Thank You"
+}
+function mOut(obj){
+    obj.innerHTML="Mouse Over Me"
+}
+</script>
+
+</body>
 </html>
           
         
