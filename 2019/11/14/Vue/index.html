@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Vue.js 订单表单               /*  隐藏未编译的变量 */  [v-cloak] {   display: none; }  *{     margin:0;     padding:0; }  body{     font:15px/1.3 &amp;apos;Open Sans&amp;apos;, sans-serif;     color">
+<meta name="description" content="Vue 测试实例 - 菜鸟教程(runoob.com)            new Vue({    el: &apos;#app&apos;,    data: {      message: &apos;Hello Vue.js!&apos;    }  })">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue">
 <meta property="og:url" content="http://yoursite.com/2019/11/14/Vue/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Vue.js 订单表单               /*  隐藏未编译的变量 */  [v-cloak] {   display: none; }  *{     margin:0;     padding:0; }  body{     font:15px/1.3 &amp;apos;Open Sans&amp;apos;, sans-serif;     color">
+<meta property="og:description" content="Vue 测试实例 - 菜鸟教程(runoob.com)            new Vue({    el: &apos;#app&apos;,    data: {      message: &apos;Hello Vue.js!&apos;    }  })">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-14T13:04:33.856Z">
+<meta property="og:updated_time" content="2019-11-14T13:13:11.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue">
-<meta name="twitter:description" content="Vue.js 订单表单               /*  隐藏未编译的变量 */  [v-cloak] {   display: none; }  *{     margin:0;     padding:0; }  body{     font:15px/1.3 &amp;apos;Open Sans&amp;apos;, sans-serif;     color">
+<meta name="twitter:description" content="Vue 测试实例 - 菜鸟教程(runoob.com)            new Vue({    el: &apos;#app&apos;,    data: {      message: &apos;Hello Vue.js!&apos;    }  })">
 
 
 
@@ -310,152 +310,27 @@
       
 
       
-        <!DOCTYPE html>
-<html>
+        <html>
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vue.js 订单表单</title>
-    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-    <style>
-    /*  隐藏未编译的变量 */
-
-<pre><code>[v-cloak] {
-  display: none;
-}
-
-*{
-    margin:0;
-    padding:0;
-}
-
-body{
-    font:15px/1.3 &apos;Open Sans&apos;, sans-serif;
-    color: #5e5b64;
-    text-align:center;
-}
-
-a, a:visited {
-    outline:none;
-    color:#389dc1;
-}
-
-a:hover{
-    text-decoration:none;
-}
-
-section, footer, header, aside, nav{
-    display: block;
-}
-
-/*-------------------------
-    订单表单
---------------------------*/
-
-form{
-    background-color: #61a1bc;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px #ccc;
-    width: 400px;
-    padding: 35px 60px;
-    margin: 50px auto;
-}
-
-form h1{
-    color:#fff;
-    font-size:64px;
-    font-family:&apos;Cookie&apos;, cursive;
-    font-weight: normal;
-    line-height:1;
-    text-shadow:0 3px 0 rgba(0,0,0,0.1);
-}
-
-form ul{
-    list-style:none;
-    color:#fff;
-    font-size:20px;
-    font-weight:bold;
-    text-align: left;
-    margin:20px 0 15px;
-}
-
-form ul li{
-    padding:20px 30px;
-    background-color:#e35885;
-    margin-bottom:8px;
-    box-shadow:0 1px 1px rgba(0,0,0,0.1);
-    cursor:pointer;
-}
-
-form ul li span{
-    float:right;
-}
-
-form ul li.active{
-    background-color:#8ec16d;
-}
-
-div.total{
-    border-top:1px solid rgba(255,255,255,0.5);
-    padding:15px 30px;
-    font-size:20px;
-    font-weight:bold;
-    text-align: left;
-    color:#fff;
-}
-
-div.total span{
-    float:right;
-}
-&lt;/style&gt;</code></pre></head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
 <body>
+<div id="app">
+  <p></p>
+</div>
 
-<!-- v-cloak 隐藏未编译的变量，直到 Vue 实例准备就绪。 -->
-
-<form id="main" v-cloak>
-
-<pre><code>&lt;h1&gt;Services&lt;/h1&gt;
-
-&lt;ul&gt;
-
-    &lt;!-- 循环输出 services 数组, 设置选项点击后的样式 --&gt;
-
-    &lt;li v-for=&quot;service in services&quot; v-on:click=&quot;toggleActive(service)&quot; v-bind:class=&quot;{ &apos;active&apos;: service.active}&quot;&gt;
-
-        &lt;!-- 显示订单中的服务名，价格
-             Vue.js 定义了货币过滤器，用于格式化价格 --&gt;
-
-        {{service.name}} &lt;span&gt;{{service.price | currency}}&lt;/span&gt;
-
-    &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;total&quot;&gt;
-
-    &lt;!-- 计算所有服务的价格，并格式化货币 --&gt;
-
-    Total: &lt;span&gt;{{total() | currency}}&lt;/span&gt;
-
-&lt;/div&gt;</code></pre></form>
 <script>
-
-<p>// 自定义过滤器 “currency”.<br>Vue.filter(‘currency’, function (value) {<br>    return ‘$’ + value.toFixed(2);<br>});</p>
-<p>var demo = new Vue({<br>    el: ‘#main’,<br>    data: {<br>        // 定义模型属性 the model properties. The view will loop<br>        // 视图将循环输出数组的数据<br>        services: [<br>            {<br>                name: ‘Web Development’,<br>                price: 300,<br>                active:true<br>            },{<br>                name: ‘Design’,<br>                price: 400,<br>                active:false<br>            },{<br>                name: ‘Integration’,<br>                price: 250,<br>                active:false<br>            },{<br>                name: ‘Training’,<br>                price: 220,<br>                active:false<br>            }<br>        ]<br>    },<br>    methods: {<br>        toggleActive: function(s){<br>            s.active = !s.active;<br>        },<br>        total: function(){</p>
-<pre><code>        var total = 0;
-
-        this.services.forEach(function(s){
-            if (s.active){
-                total+= s.price;
-            }
-        });
-
-       return total;
-    }
-}</code></pre><p>});</p>
-<p></script></p>
+ new Vue({
+   el: '#app',
+   data: {
+     message: 'Hello Vue.js!'
+   }
+ })
+</script>
 </body>
-</html></style></head></html>
+</html>
       
     </div>
     
