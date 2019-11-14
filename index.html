@@ -258,7 +258,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/11/14/Vue/" itemprop="url">Vue-1</a></h1>
+                <a class="post-title-link" href="/2019/11/14/Vue/" itemprop="url">Vue</a></h1>
         
 
         <div class="post-meta">
@@ -310,7 +310,8 @@
       
         
           
-            <html>
+            <!DOCTYPE html>
+<html>
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -437,7 +438,7 @@ div.total span{
     Total: &lt;span&gt;{{total() | currency}}&lt;/span&gt;
 
 &lt;/div&gt;</code></pre></form>
-    <script>
+<script>
 
 <p>// 自定义过滤器 “currency”.<br>Vue.filter(‘currency’, function (value) {<br>    return ‘$’ + value.toFixed(2);<br>});</p>
 <p>var demo = new Vue({<br>    el: ‘#main’,<br>    data: {<br>        // 定义模型属性 the model properties. The view will loop<br>        // 视图将循环输出数组的数据<br>        services: [<br>            {<br>                name: ‘Web Development’,<br>                price: 300,<br>                active:true<br>            },{<br>                name: ‘Design’,<br>                price: 400,<br>                active:false<br>            },{<br>                name: ‘Integration’,<br>                price: 250,<br>                active:false<br>            },{<br>                name: ‘Training’,<br>                price: 220,<br>                active:false<br>            }<br>        ]<br>    },<br>    methods: {<br>        toggleActive: function(s){<br>            s.active = !s.active;<br>        },<br>        total: function(){</p>
@@ -452,9 +453,9 @@ div.total span{
        return total;
     }
 }</code></pre><p>});</p>
-<pre><code>&lt;/script&gt;</code></pre></body>
-</html>
-</style></head></html>
+<p></script></p>
+</body>
+</html></style></head></html>
           
         
       
